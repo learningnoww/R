@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join Telegram</title>
+<title>Akky Boss | Join Now</title>
 
 <!-- Meta Pixel -->
 <script>
@@ -16,72 +16,93 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-// 👉 APNI PIXEL ID YAHAN DALO
 fbq('init', '2028705384738890');
 fbq('track', 'PageView');
 </script>
 
-<!-- Backup Tracking -->
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"/>
-</noscript>
-
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: radial-gradient(circle at top, #0a1f2c, #020d14);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#1a2a6c,#b21f1f,#fdbb2d);
+  background-size: 300% 300%;
+  animation: bgMove 8s infinite alternate;
   color: white;
   text-align: center;
 }
 
+@keyframes bgMove {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
 .container {
-  padding: 40px 20px;
+  padding: 40px 15px;
 }
 
 .card {
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
-  padding: 25px;
+  padding: 30px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 0 30px rgba(0,255,200,0.2);
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(255,255,255,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
 }
 
 .live {
   color: #00ffcc;
   font-size: 14px;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {opacity: 0.4;}
 }
 
 h1 {
   margin: 10px 0;
+  font-size: 26px;
 }
 
 p {
-  color: #aaa;
+  color: #ddd;
 }
 
 .btn {
   display: block;
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 30px;
+  margin-top: 25px;
+  padding: 16px;
+  border-radius: 40px;
   font-weight: bold;
   text-decoration: none;
   color: black;
   background: linear-gradient(90deg,#00ffcc,#ffcc00);
+  box-shadow: 0 0 20px rgba(255,255,0,0.6);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,255,0,1);
 }
 
 .features {
   margin-top: 25px;
-  color: #ccc;
+  color: #eee;
+  line-height: 1.8;
 }
 
 .footer {
   margin-top: 25px;
-  color: #888;
+  color: #aaa;
   font-size: 12px;
 }
 </style>
@@ -93,23 +114,23 @@ p {
 <div class="container">
 
 <div class="card">
-  <div class="live">● LIVE</div>
+  <div class="live">● LIVE NOW</div>
 
-  <h1>JOIN TELEGRAM</h1>
-  <p>Get instant updates & daily signals</p>
+  <h1>🔥 AKKY BOSS 🔥</h1>
+  <p>Join our premium community & get daily smart updates</p>
 
-  <!-- ✅ BEST TRACKING BUTTON -->
   <a href="#" class="btn" onclick="trackAndRedirect()">
-     🚀 JOIN TELEGRAM
+     🚀 JOIN TELEGRAM NOW
   </a>
 
   <div class="features">
-    ⚡ Study Updates <br>
-    🔒 Trusted Channel <br>
-    👥 100k+ Members
+    ⚡ Daily Updates <br>
+    📊 Smart Insights <br>
+    🔒 Trusted Community <br>
+    👥 100K+ Members
   </div>
 
-  <div class="footer">Powered by Akky boss</div>
+  <div class="footer">© 2026 Akky Boss</div>
 </div>
 
 </div>
@@ -120,7 +141,7 @@ function trackAndRedirect(){
 
   setTimeout(function(){
     window.location.href = "https://t.me/+jEcShQv3bTI4N2Nl";
-  }, 500); // delay for perfect tracking
+  }, 500);
 }
 </script>
 
